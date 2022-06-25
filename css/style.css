@@ -1,0 +1,43 @@
+:root {
+}
+
+/* Styles reset */
+h1,
+h2,
+h3,
+h4,
+a,
+address,
+img,
+ul,
+li,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ul {
+  list-style: none;
+}
+button {
+  border: 0;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Global style */
+
+/* Header */
+
+/* Main */
+
+/* Footer */

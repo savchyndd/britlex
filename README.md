@@ -1,1 +1,1 @@
-# goit-britlex
+# Britlex Language School

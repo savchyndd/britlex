@@ -1,4 +1,13 @@
 :root {
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --accent-forst-color: #263238;
+  --accent-second-color: #939393;
+  --decription-color: #8f95a5;
+
+  --landing-background-color: #e5e5e5;
+  --card-background-color: #f5f5f5;
+  --price-background-color: #eeeeee;
 }
 
 /* Styles reset */

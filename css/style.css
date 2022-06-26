@@ -1,9 +1,11 @@
 :root {
   --black-color: #000000;
   --white-color: #ffffff;
-  --accent-forst-color: #263238;
+  --accent-first-color: #263238;
   --accent-second-color: #939393;
   --decr-color: #8f95a5;
+  --price-color: #2a3246;
+  --period-color: #546269;
 
   --landing-background-color: #e5e5e5;
   --card-background-color: #f5f5f5;
@@ -51,6 +53,7 @@ body {
   background-color: var(--white-color);
   color: var(--decr-color);
   font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
 }
 h1,
 h2,
@@ -59,13 +62,15 @@ h4 {
   color: var(--black-color);
 }
 
-.section {
+section {
   padding: 90px 0;
 }
 .container {
   max-width: 1338px;
   margin: 0 auto;
   padding: 0 20px;
+
+  outline: 1px solid tomato;
 }
 
 /* Header */
@@ -76,10 +81,7 @@ h4 {
   padding-bottom: 55px;
 }
 .logo {
-  font-style: normal;
-  font-weight: 400;
   font-size: 36px;
-  line-height: 1.5;
   letter-spacing: 0.03em;
 
   color: var(--black-color);
@@ -95,26 +97,202 @@ h4 {
   padding-top: 20px;
   padding-bottom: 20px;
 
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.5;
-  color: var(--accent-forst-color);
+  color: var(--accent-first-color);
 }
 .header-btn {
   padding: 18px 56px;
   margin-left: auto;
 
   font-size: 20px;
-  line-height: 1.5;
   letter-spacing: 0.03em;
 
   color: var(--black-color);
   background-color: var(--white-color);
-  border: 2px solid var(--accent-forst-color);
+  border: 2px solid var(--accent-first-color);
   border-radius: 10px;
 }
 
 /* Main */
+/* Section Hero */
+.section-hero {
+  padding-top: 0;
+}
+.container.hero {
+  display: flex;
+}
+.hero-textblock {
+  margin-right: 144px;
+}
+.hero-title {
+  margin-bottom: 40px;
+  max-width: 386px;
 
-/* Footer */ ;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+}
+.hero-decr {
+  margin-bottom: 60px;
+  font-size: 24px;
+}
+.hero-btn {
+  padding: 23px 64px;
+  border-radius: 10px;
+
+  font-size: 36px;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+  background-color: var(--accent-first-color);
+}
+
+/* Section Skills */
+.container.skills {
+}
+.skills-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.skills-item {
+  flex-basis: calc(100% / 3);
+  max-width: 426px;
+  background: var(--card-background-color);
+  border-radius: 10px;
+  padding: 32px 18px;
+}
+/* .skills-item.skills-text {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.skills-item-text {
+} */
+
+.skills-subtitle {
+  font-weight: 600;
+  font-size: 30px;
+
+  color: var(--accent-first-color);
+}
+.skills-decr {
+  font-size: 16px;
+}
+.skills-link {
+  padding: 15px 52px;
+
+  font-weight: 500;
+  font-size: 20px;
+
+  color: var(--white-color);
+  background: var(--accent-first-color);
+  border-radius: 10px;
+}
+
+/* Section About-Us */
+.container.about {
+  display: flex;
+}
+.about-title {
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+.about-decr {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.about-list {
+  display: flex;
+  justify-content: center;
+  max-width: 555px;
+  margin: auto;
+}
+
+.about-item {
+  text-align: center;
+}
+.about-item:not(:last-child) {
+  margin-right: 131px;
+}
+.about-subtitle {
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 48px;
+
+  color: var(--price-color);
+}
+.about-subdecr {
+  font-weight: 400;
+  font-size: 20px;
+}
+.about-img {
+  margin-left: 146px;
+}
+/* Section Pricing */
+.pricing-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+}
+.pricing-list {
+  display: flex;
+}
+.pricing-item {
+  max-width: 426px;
+  align-content: space-between;
+}
+.pricing-item:not(:last-child) {
+  margin-right: 30px;
+}
+.pricing-img {
+  margin-bottom: 31px;
+
+  width: 426px;
+  height: 320px;
+}
+.pricing-subtitle {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.6;
+
+  text-transform: capitalize;
+  color: var(--accent-first-color);
+}
+.pricing-decr {
+  font-size: 20px;
+}
+.price-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 23px;
+  max-width: 260px;
+  max-height: 45px;
+
+  background: var(--price-background-color);
+  border-radius: 5px;
+}
+.pricing-price {
+  font-size: 24px;
+
+  color: var(--accent-first-color);
+}
+.pricing-period {
+  font-size: 18px;
+
+  color: var(--period-color);
+}
+/* Section Contact-Us */
+
+/* Footer */

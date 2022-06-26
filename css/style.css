@@ -102,14 +102,11 @@ h4 {
   color: var(--accent-forst-color);
 }
 .header-btn {
-  padding: 20px 56px;
+  padding: 18px 56px;
   margin-left: auto;
 
-  font-style: normal;
-  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
-  text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--black-color);

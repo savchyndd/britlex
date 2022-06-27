@@ -69,8 +69,6 @@ section {
   max-width: 1338px;
   margin: 0 auto;
   padding: 0 20px;
-
-  outline: 1px solid tomato;
 }
 
 /* Header */
@@ -149,8 +147,6 @@ section {
 }
 
 /* Section Skills */
-.container.skills {
-}
 .skills-title {
   text-align: center;
   font-weight: 600;
@@ -293,6 +289,79 @@ section {
 
   color: var(--period-color);
 }
-/* Section Contact-Us */
 
+/* Section Contact-Us */
+section.contact {
+  padding-bottom: 0;
+}
+.container.contact {
+  display: flex;
+}
+.contact-img {
+  margin-right: 144px;
+}
+.contact-title {
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+.contact-decr {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.contact-form-input {
+  width: 425px;
+  height: 70px;
+  padding: 20px 30px;
+  margin-right: 30px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--decr-color);
+
+  border: 1px solid var(--decr-color);
+  border-radius: 10px;
+}
+.contact-form-btn {
+  width: 312px;
+  height: 70px;
+  padding: 20px 56px;
+
+  font-weight: 500;
+  font-size: 20px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+  background-color: var(--accent-first-color);
+  border-radius: 10px;
+
+  cursor: pointer;
+}
 /* Footer */
+.container.footer {
+  display: flex;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.logo-footer {
+  color: var(--accent-second-color);
+}
+.footer-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 80px;
+}
+.footer-link {
+  padding: 22px 0;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+}

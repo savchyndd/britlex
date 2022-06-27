@@ -155,21 +155,16 @@ section {
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  /* Test */
+  gap: 10px;
 }
 .skills-item {
-  flex-basis: calc(100% / 3);
   max-width: 426px;
+  height: 584px;
   background: var(--card-background-color);
   border-radius: 10px;
   padding: 32px 18px;
 }
-/* .skills-item.skills-text {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.skills-item-text {
-} */
 
 .skills-subtitle {
   font-weight: 600;

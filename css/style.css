@@ -122,6 +122,7 @@ section {
 }
 .hero-textblock {
   margin-right: 144px;
+  max-width: 540px;
 }
 .hero-title {
   margin-bottom: 40px;

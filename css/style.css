@@ -304,6 +304,7 @@ section {
 }
 .pricing-decr {
   font-size: 20px;
+  margin: 0;
 }
 .price-label {
   display: flex;
@@ -317,6 +318,7 @@ section {
   border-radius: 5px;
 }
 .pricing-price {
+  margin-top: auto;
   font-size: 24px;
 
   color: var(--accent-first-color);

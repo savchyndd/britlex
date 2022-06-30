@@ -10,6 +10,7 @@
   --landing-background-color: #e5e5e5;
   --card-background-color: #f5f5f5;
   --price-background-color: #eeeeee;
+  --border-color: #c4c4c4;
 }
 
 /* Styles reset */
@@ -124,15 +125,27 @@ section {
   margin-right: 144px;
   max-width: 540px;
 }
-.hero-title {
+.hero-title-style {
+  display: flex;
+  align-items: flex-end;
   margin-bottom: 40px;
+}
+.hero-title {
   max-width: 386px;
 
   font-weight: 600;
   font-size: 64px;
   line-height: 1.25;
 }
+
+.hero-icon {
+  margin-left: 34px;
+  margin-bottom: 46px;
+  fill: var(--black-color);
+  transform: rotate(39deg);
+}
 .hero-decr {
+  margin-top: 0;
   margin-bottom: 60px;
   font-size: 24px;
 }
@@ -281,6 +294,9 @@ section {
 }
 .pricing-item {
   max-width: 426px;
+  height: 584px;
+  display: flex;
+  flex-direction: column;
   align-content: space-between;
 }
 .pricing-item:not(:last-child) {
@@ -307,6 +323,8 @@ section {
   margin: 0;
 }
 .price-label {
+  margin-top: auto;
+
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -387,6 +405,7 @@ section.contact {
   align-items: center;
   padding-top: 55px;
   padding-bottom: 55px;
+  border-top: 1px solid var(--border-color);
 }
 .logo-footer {
   color: var(--accent-second-color);

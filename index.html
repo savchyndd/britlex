@@ -23,17 +23,25 @@
   <body>
     <header>
       <div class="container header-main">
-        <a href="index.html" class="logo">Britlex</a>
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
-          </ul>
-        </nav>
-        <button type="button" class="header-btn">Let’s Talk</button>
+        <a href="./index.html" class="logo">Brit<span>lex</span></a>
+
+        <button type="button" class="burger-menu">
+          <svg width="34" height="19" aria-hidden="true">
+            <use href="./img/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-wrapper">
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="#about-us" class="nav-link">About Us</a></li>
+              <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            </ul>
+          </nav>
+          <button type="button" class="header-btn">Let’s Talk</button>
+        </div>
       </div>
     </header>
     <main>
@@ -43,8 +51,7 @@
           <div class="hero-textblock">
             <div class="hero-title-style">
               <h1 class="hero-title">
-                Learn<br />
-                Any Foreign Language
+                Learn <br class="hero-title--br" />Any <span>Foreign Language</span>
               </h1>
               <svg class="hero-icon" width="85" height="85" aria-hidden="true">
                 <use href="./img/icons.svg#icon-bulb"></use>
@@ -66,7 +73,7 @@
       </section>
 
       <!-- Section Skills -->
-      <section>
+      <!-- <section>
         <div class="container skills">
           <h2 class="skills-title">Skills</h2>
           <ul class="skills-list">
@@ -138,10 +145,10 @@
             </div>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Section About-Us -->
-      <section>
+      <!-- <section>
         <div class="container about">
           <div class="about-text-block">
             <h2 class="about-title">About Us</h2>
@@ -173,10 +180,10 @@
             class="about-img"
           />
         </div>
-      </section>
+      </section> -->
 
       <!-- Section Pricing -->
-      <section>
+      <!-- <section>
         <div class="container">
           <h2 class="pricing-title">Pricing</h2>
           <ul class="pricing-list">
@@ -216,10 +223,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Section Contact-Us -->
-      <section class="contact">
+      <!-- <section class="contact">
         <div class="container contact">
           <img src="./img/contact.png" alt="Contact" width="425" class="contact-img" />
           <div class="contact-text-block">
@@ -230,29 +237,30 @@
             </p>
             <div class="contact-form">
               <form>
-              <input
-                required
-                type="email"
-                class="contact-form-input"
-                name="Email"
-                placeholder="Enter Your E-mail"/>
-              <label for="user-email" class="contact-form-btn">Subscribe</label>
+                <input
+                  required
+                  type="email"
+                  class="contact-form-input"
+                  name="Email"
+                  placeholder="Enter Your E-mail"
+                />
+                <label for="user-email" class="contact-form-btn">Subscribe</label>
               </form>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer>
+    <!-- <footer>
       <div class="container footer">
-        <a href="./index.html" class="logo">Brit<span class="logo-footer">lex</span></a>
+        <a href="./index.html" class="logo">Brit<span>lex</span></a>
         <ul class="footer-list">
           <li class="footer-item"><a href="#" class="footer-link">Terms and Conditions</a></li>
           <li class="footer-item"><a href="#" class="footer-link">Privacy Policy</a></li>
           <li class="footer-item"><a href="#" class="footer-link">Cookie Policy</a></li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

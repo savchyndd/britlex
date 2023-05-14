@@ -25,15 +25,21 @@
       <div class="container header-main">
         <a href="./index.html" class="logo">Brit<span>lex</span></a>
 
-        <button type="button" class="burger-menu">
+        <button
+          class="burger-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-wrapper"
+          data-menu-btn
+        >
           <svg width="34" height="19" aria-hidden="true">
             <use href="./img/icons.svg#icon-burger-menu"></use>
           </svg>
         </button>
-        <div class="menu-wrapper">
+        <div class="menu-wrapper" id="menu-wrapper" data-menu>
           <nav class="main-nav">
             <ul class="nav-list">
-              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="index.html" class="nav-link current">Home</a></li>
               <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
               <li class="nav-item"><a href="#about-us" class="nav-link">About Us</a></li>
               <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
@@ -53,7 +59,7 @@
               <h1 class="hero-title">
                 Learn <br class="hero-title--br" />Any <span>Foreign Language</span>
               </h1>
-              <svg class="hero-icon" width="85" height="85" aria-hidden="true">
+              <svg class="hero-icon" width="50" height="50" aria-hidden="true">
                 <use href="./img/icons.svg#icon-bulb"></use>
               </svg>
             </div>

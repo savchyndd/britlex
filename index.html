@@ -25,21 +25,10 @@
       <div class="container header-main">
         <a href="./index.html" class="logo">Brit<span>lex</span></a>
 
-        <button
-          class="burger-menu"
-          type="button"
-          aria-expanded="false"
-          aria-controls="menu-wrapper"
-          data-menu-btn
-        >
-          <svg width="34" height="19" aria-hidden="true">
-            <use href="./img/icons.svg#icon-burger-menu"></use>
-          </svg>
-        </button>
         <div class="menu-wrapper" id="menu-wrapper" data-menu>
           <nav class="main-nav">
             <ul class="nav-list">
-              <li class="nav-item"><a href="index.html" class="nav-link current">Home</a></li>
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
               <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
               <li class="nav-item"><a href="#about-us" class="nav-link">About Us</a></li>
               <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
@@ -48,6 +37,19 @@
           </nav>
           <button type="button" class="header-btn">Let’s Talk</button>
         </div>
+
+        <button
+          class="burger-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-wrapper"
+          data-menu-btn
+        >
+          <svg class="burger-menu__icon-menu" width="34" height="34" aria-hidden="true">
+            <use class="burger-menu__icon-menu--open" href="./img/icons.svg#icon-burger-menu"></use>
+            <use class="burger-menu__icon-menu--close" href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -79,7 +81,7 @@
       </section>
 
       <!-- Section Skills -->
-      <!-- <section>
+      <section>
         <div class="container skills">
           <h2 class="skills-title">Skills</h2>
           <ul class="skills-list">
@@ -151,7 +153,7 @@
             </div>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Section About-Us -->
       <!-- <section>
@@ -268,5 +270,7 @@
         </ul>
       </div>
     </footer> -->
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>

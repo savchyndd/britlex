@@ -391,15 +391,6 @@ section {
   }
 }
 
-/* -------------------------------------------- */
-@media screen and (min-width: 320px) {
-}
-@media screen and (min-width: 768px) {
-}
-@media screen and (min-width: 1440px) {
-}
-/* ---------------------------------------------- */
-
 /* Section Skills */
 .skills-title {
   text-align: center;
@@ -457,6 +448,7 @@ section {
     margin-right: 30px;
   }
 }
+
 .skills-grid-2 {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -476,7 +468,6 @@ section {
     /* gap: 10px; */
   }
 }
-
 .skills-subgrid-1:not(:last-child) {
   margin-bottom: 20px;
 
@@ -485,7 +476,6 @@ section {
     margin-right: 0px;
   }
 }
-
 .skills-subgrid-2 {
   @media screen and (min-width: 768px) {
     margin-top: 10px;
@@ -494,6 +484,7 @@ section {
     margin-top: 30px;
   }
 }
+
 .skills-item.skills-text {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -507,6 +498,7 @@ section {
     max-width: 882px;
   }
 }
+
 .skills-img {
   @media screen and (min-width: 768px) {
     margin-bottom: 8px;
@@ -516,6 +508,7 @@ section {
     margin-bottom: 24px;
   }
 }
+
 .skills-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -575,6 +568,7 @@ section {
     border-radius: 10px;
   }
 }
+
 .skills-item-text {
   @media screen and (min-width: 768px) {
     max-width: 252px;
@@ -599,45 +593,146 @@ section {
 /* Section About-Us */
 .container.about {
   display: flex;
+
+  @media screen and (max-width: 767.98px) {
+    flex-direction: column-reverse;
+
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
+
+.about-text-block {
+  @media screen and (min-width: 768px) {
+    max-width: 322px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 652px;
+  }
+}
+
 .about-title {
   font-weight: 600;
-  font-size: 48px;
-  margin-bottom: 60px;
+  font-size: 24px;
+  line-height: 3.33;
+
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+    line-height: 2.67;
+
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+    line-height: 1.5;
+
+    margin-bottom: 60px;
+  }
 }
-.about-decr {
-  font-size: 20px;
-  line-height: 1.8;
-  margin-top: 0;
-  margin-bottom: 30px;
+.about-title--mobile {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
-.about-list {
-  display: flex;
-  justify-content: center;
-  max-width: 555px;
-  margin: auto;
+.about-title--tablet-up {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
+.about-decr {
+  font-size: 13px;
+  margin-top: 0;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.about-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    max-width: 321px;
+    margin: auto;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 555px;
+  }
+}
 .about-item {
-  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
 }
 .about-item:not(:last-child) {
-  margin-right: 131px;
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 48px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-right: 131px;
+  }
 }
 .about-subtitle {
-  margin-bottom: 6px;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 24px;
+  line-height: 3.33;
 
   color: var(--price-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 3.64;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+
+    margin-bottom: 6px;
+  }
 }
 .about-subdecr {
+  margin: 0;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+  }
 }
+
 .about-img {
-  margin-left: 146px;
+  max-width: 283px;
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 24;
+  }
+  @media screen and (min-width: 768 px) {
+    margin-left: 74px;
+    max-width: 295px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-left: 146px;
+    max-width: 540px;
+  }
 }
+
 /* Section Pricing */
 .pricing-title {
   text-align: center;
